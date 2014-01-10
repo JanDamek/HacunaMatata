@@ -1,0 +1,5 @@
+inherited MSUpdateSQLEditorForm: TMSUpdateSQLEditorForm
+  Left = 22
+  Top = 29
+  Caption = 'MSUpdateSQLEditorForm'
+end

@@ -1,0 +1,63 @@
+inherited MSDumpEditorForm: TMSDumpEditorForm
+  Left = 66
+  Top = 87
+  Caption = 'MSDumpEditorForm'
+  inherited BtnPanel: TPanel
+    inherited imCorner: TImage
+    end
+    inherited btOk: TBitBtn
+    end
+    inherited btCancel: TBitBtn
+    end
+  end
+  inherited ClientPanel: TPanel
+    inherited meSQL: TMemo
+    end
+    inherited LeftPanel: TPanel
+      inherited gbBackupOptions: TGroupBox
+        Height = 167
+        ClientHeight = 149
+        inherited lbTableNames: TLabel
+        end
+        inherited cbTableNames: TComboBox
+          Width = 189
+          TabOrder = 2
+        end
+        inherited cbGenerateHeader: TCheckBox
+          Top = 83
+          OnClick = cbDataClick
+        end
+        object cbIdentityInsert: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 120
+          Width = 111
+          Caption = 'Use Identity Insert'
+          OnClick = cbDataClick
+          TabOrder = 1
+        end
+        object cbAddDrop: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 101
+          Width = 161
+          Caption = 'Add TRUNCATE statements'
+          OnClick = cbDataClick
+          TabOrder = 3
+        end
+      end
+      inherited btBackup: TBitBtn
+        Top = 183
+      end
+      inherited btRestore: TBitBtn
+        Top = 183
+      end
+      inherited btImport: TBitBtn
+        Top = 214
+      end
+      inherited btExport: TBitBtn
+        Top = 214
+      end
+    end
+  end
+end

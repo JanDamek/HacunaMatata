@@ -1,0 +1,57 @@
+inherited DAUpdateSQLFrame: TDAUpdateSQLFrame
+  inherited Panel1: TPanel
+    Height = 183
+    Top = 46
+    ClientHeight = 183
+    TabOrder = 1
+    inherited meSQL: TMemo
+      Height = 167
+      OnChange = meSQLChange
+    end
+  end
+  object pnlTop: TPanel
+    Height = 46
+    Width = 481
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 46
+    ClientWidth = 481
+    TabOrder = 0
+    object btClear: TSpeedButton
+      Left = 451
+      Height = 31
+      Hint = 'Clear'
+      Top = 9
+      Width = 21
+      Anchors = [akTop, akRight]
+      Color = clBtnFace
+      Flat = True
+      Glyph.Data = {
+        4E010000424D4E01000000000000760000002800000012000000120000000100
+        040000000000D800000000000000000000001000000010000000000000000000
+        8000008000000080800080000000800080008080000080808000C0C0C0000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00888888888888
+        888888FFFFFF888888888888888888FFFFFF888888888888881F88FFFFFF8888
+        1F888888888888FFFFFF888111F8888881F888FFFFFF888111F888881F8888FF
+        FFFF8888111F88811F8888FFFFFF88888111F811F88888FFFFFF88888811111F
+        888888FFFFFF8888888111F8888888FFFFFF88888811111F888888FFFFFF8888
+        8111F811888888FFFFFF8881111F88811F8888FFFFFF881111F8888811F888FF
+        FFFF8811F8888888811F88FFFFFF888888888888888888FFFFFF888888888888
+        888888FFFFFF888888888888888888FFFFFF
+      }
+      NumGlyphs = 0
+      OnClick = btClearClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object gbStatementType: TGroupBox
+      Left = 7
+      Height = 40
+      Top = 3
+      Width = 441
+      Anchors = [akTop, akLeft, akRight]
+      Caption = ' Statement Type '
+      TabOrder = 0
+    end
+  end
+end

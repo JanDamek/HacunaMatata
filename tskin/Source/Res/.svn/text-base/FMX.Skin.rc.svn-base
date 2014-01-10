@@ -1,0 +1,6 @@
+TSKIN BITMAP "tskin.bmp"
+TSKIN16 BITMAP "tskin16.bmp"
+TSKIN32 BITMAP "tskin32.bmp"
+TSKINANIMATION BITMAP "tskinanimation.bmp"
+TSKINANIMATION16 BITMAP "tskinanimation16.bmp"
+TSKINANIMATION32 BITMAP "tskinanimation32.bmp"

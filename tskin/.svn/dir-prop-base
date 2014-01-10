@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 77
+Skins
+Demo.dpr
+DemoUnit1.fmx
+Demo_Icon.ico
+DemoUnit1.pas
+Demo.res
+readme.txt
+
+END

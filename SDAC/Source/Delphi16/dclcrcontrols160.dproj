@@ -1,0 +1,200 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{b275cd52-cfe3-4924-b1f4-178d6a797af5}</ProjectGuid>
+			<MainSource>dclcrcontrols160.dpk</MainSource>
+			<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<DCC_DependencyCheckOutputName>dclcrcontrols160.bpl</DCC_DependencyCheckOutputName>
+			<ProjectVersion>13.4</ProjectVersion>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<AppType>Package</AppType>
+			<FrameworkType>None</FrameworkType>
+			<Platform Condition="'$(Platform)'==''">Win32</Platform>
+			<TargetedPlatforms>1</TargetedPlatforms>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+			<Base_Win64>true</Base_Win64>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+			<Base_Win32>true</Base_Win32>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+			<Cfg_2_Win32>true</Cfg_2_Win32>
+			<CfgParent>Cfg_2</CfgParent>
+			<Cfg_2>true</Cfg_2>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_DcpOutput>C:\Projekt\pluginFM\dcu\$(Platform)\$(Config)</DCC_DcpOutput>
+			<DCC_BplOutput>C:\Projekt\pluginFM\pck\$(Platform)\$(Config)</DCC_BplOutput>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<VerInfo_Build>10000</VerInfo_Build>
+			<VerInfo_MinorVer>1</VerInfo_MinorVer>
+			<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_MajorVer>8</VerInfo_MajorVer>
+			<VerInfo_Keys>CompanyName=Devart;FileDescription=;FileVersion=8.1.6.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=Devart Controls;ProductVersion=8.1.6.0;Comments=</VerInfo_Keys>
+			<VerInfo_Release>6</VerInfo_Release>
+			<VerInfo_Locale>1029</VerInfo_Locale>
+			<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+			<DesignOnlyPackage>true</DesignOnlyPackage>
+			<DCC_Description>Devart Controls</DCC_Description>
+			<DCC_DcuOutput>C:\Projekt\pluginFM\dcu\$(Platform)\$(Config)</DCC_DcuOutput>
+			<DCC_UnitSearchPath>..;$(BDS)\source\ToolsAPI;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+			<GenDll>true</GenDll>
+			<GenPackage>true</GenPackage>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win64)'!=''">
+			<Icon_MainIcon>dclcrcontrols160_Icon.ico</Icon_MainIcon>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win32)'!=''">
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<Icon_MainIcon>dclcrcontrols160_Icon.ico</Icon_MainIcon>
+			<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<DCC_UsePackage>crcontrols160;$(DCC_UsePackage)</DCC_UsePackage>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_DebugInformation>False</DCC_DebugInformation>
+			<DCC_WriteableConstants>True</DCC_WriteableConstants>
+			<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+		</PropertyGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>Package</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Parameters/>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">8</VersionInfo>
+						<VersionInfo Name="MinorVer">1</VersionInfo>
+						<VersionInfo Name="Release">6</VersionInfo>
+						<VersionInfo Name="Build">10000</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1029</VersionInfo>
+						<VersionInfo Name="CodePage">1250</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">8.1.6.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName">Devart Controls</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">8.1.6.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">dclcrcontrols160.dpk</Source>
+					</Source>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\VclSmp160.bpl">Embarcadero Sample Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\svnui160.bpl">User interface code for subversion integration</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\svn160.bpl">Subversion integration</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\FMXTeeUI9160.bpl">TeeChart FMX User Interface</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\FMXTee9160.bpl">TeeChart for FireMonkey</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bdertl160.bpl">Embarcadero BDE Database Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\TeeUI9160.bpl">TeeChart User Interface Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\TeeDB9160.bpl">TeeChart Database Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\Tee9160.bpl">TeeChart Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bindengine160.bpl">Embarcadero LiveBindings Runtime Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bindcomp160.bpl">Embarcadero LiveBindings Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bindcompfmx162.bpl">Embarcadero LiveBindings Components Firemonkey</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bindcompvcl160.bpl">Embarcadero LiveBindings Components VCL</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vcldbx160.bpl">Embarcadero Compatibility Database Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vcldb160.bpl">Embarcadero Database Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vcltouch160.bpl">Embarcadero Touch VCL Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dsnapcon160.bpl">Embarcadero DataSnap Connection Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vcldsnap160.bpl">Embarcadero Vcl DataSnap Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vclib160.bpl">Embarcadero InterBase Express VCL Controls</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\ibxpress160.bpl">Embarcadero InterBase Express Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\adortl160.bpl">Embarcadero ADO Database Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\IndyCore160.bpl">Indy 10 Core</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\IndySystem160.bpl">Indy 10 System</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\IndyProtocols160.bpl">Indy 10 Protocols</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\intrawebdb_120_160.bpl">IntraWeb 12.0 Runtime DB Package for RAD Studio XE2</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\Intraweb_120_160.bpl">IntraWeb 12.0 Runtime Package for RAD Studio XE2</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\inetdb160.bpl">Embarcadero Internet/World Wide Web database components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\webdsnap160.bpl">Embarcadero InternetExpress Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\inetdbbde160.bpl">(untitled)</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\inetdbxpress160.bpl">(untitled)</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\websnap160.bpl">Embarcadero WebSnap Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vclribbon160.bpl">Embarcadero Ribbon Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\DBXMySQLDriver160.bpl">Embarcadero MySQL Client</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\DBXInterBaseDriver160.bpl">Embarcadero InterBase Client</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\IPIndyImpl160.bpl">Embarcadero IP Indy Implementation</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dbxcds160.bpl">Embarcadero SimpleDataSet Component (DBX)</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\CloudService160.bpl">Embarcadero Cloud Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\fmxobj162.bpl">Embarcadero FMX OBJ Import Library</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\fmxdae162.bpl">Embarcadero FMX DAE Import Library</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\fmxase162.bpl">Embarcadero FMX ASE Import Library</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k160.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\office2K160.bpl">(untitled)</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp160.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win64">False</Platform>
+					<Platform value="OSX32">False</Platform>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<ItemGroup>
+			<DelphiCompile Include="$(MainSource)">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="crcontrols160.dcp"/>
+			<DCCReference Include="..\CRControlsReg.pas"/>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	</Project>

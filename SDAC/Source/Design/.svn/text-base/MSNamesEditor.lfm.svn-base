@@ -1,0 +1,3 @@
+inherited MSNamesEditorForm: TMSNamesEditorForm
+  Caption = 'MSNamesEditorForm'
+end

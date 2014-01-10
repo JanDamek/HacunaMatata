@@ -1,0 +1,148 @@
+10
+
+dir
+183
+https://klient.helios.eu:8443/svn/jadro/HM/trunk/iOSGame15/BouncingBalls/xcode
+https://klient.helios.eu:8443/svn/jadro
+
+
+
+2012-08-03T14:36:52.335101Z
+172
+jan.damek
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3c6bede2-e4c5-9441-8b77-7547e64fddda
+
+BouncingBalls.plist
+file
+
+
+
+
+2012-05-17T09:19:30.000000Z
+e5c29d796a5e349d3d662ccaa97330cd
+2012-05-17T09:18:59.563687Z
+106
+jan.damek
+
+BouncingBalls.xcodeproj
+dir
+
+Default-Landscape.png
+file
+
+
+
+
+2012-05-17T09:19:30.000000Z
+dbeb183415c47121f019b9cfed9977ad
+2012-05-17T09:18:59.563687Z
+106
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+Default-Portrait.png
+file
+
+
+
+
+2012-05-17T09:19:30.000000Z
+7f48a5d59284b75cfc3dfcc82ad0e3ac
+2012-05-17T09:18:59.563687Z
+106
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+Default.png
+file
+
+
+
+
+2012-05-17T09:19:30.000000Z
+dbf7d8f502d51de84174cf2f9814ae0b
+2012-05-17T09:18:59.563687Z
+106
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+Default@2x.png
+file
+
+
+
+
+2012-05-17T09:19:30.000000Z
+537e54c1b473107fb2559df2327c6552
+2012-05-17T09:18:59.563687Z
+106
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+Icon114.png
+file
+
+
+
+
+2012-05-17T09:19:30.000000Z
+f83f1cd2375b01d75dc60f79165cd52e
+2012-05-17T09:18:59.563687Z
+106
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+Icon72.png
+file
+
+
+
+
+2012-05-17T09:19:30.000000Z
+91bb133c3e22ce858a7555ab139e3527
+2012-05-17T09:18:59.563687Z
+106
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+Icon79.png
+file
+
+
+
+
+2012-05-17T09:19:30.000000Z
+91af5c7fd96d6a650ab148011482b83a
+2012-05-17T09:18:59.563687Z
+106
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+

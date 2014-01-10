@@ -1,0 +1,13 @@
+inherited DAEditorForm: TDAEditorForm
+  Left = 154
+  Top = 203
+  Caption = 'DAEditorForm'
+  inherited BtnPanel: TPanel
+    inherited imCorner: TImage
+    end
+    inherited btOk: TBitBtn
+    end
+    inherited btCancel: TBitBtn
+    end
+  end
+end

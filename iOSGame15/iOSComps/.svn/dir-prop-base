@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 49
+Win32
+*.local
+*.identcache
+*.tvsconfig
+__history
+
+END

@@ -1,0 +1,146 @@
+inherited MSConnectionEditorForm: TMSConnectionEditorForm
+  Left = 22
+  Top = 29
+  Caption = 'MSConnectionEditorForm'
+  inherited BtnPanel: TPanel
+    inherited imCorner: TImage
+    end
+    inherited btOk: TBitBtn
+    end
+    inherited btCancel: TBitBtn
+    end
+  end
+  inherited PageControl: TPageControl
+    inherited shConnect: TTabSheet
+      inherited shRed: TShape
+      end
+      inherited shYellow: TShape
+      end
+      inherited shGreen: TShape
+      end
+      inherited Panel: TPanel
+        inherited lbUsername: TLabel
+        end
+        inherited lbPassword: TLabel
+        end
+        inherited lbServer: TLabel
+        end
+        object lbDatabase: TLabel[3]
+          Left = 16
+          Height = 14
+          Top = 118
+          Width = 47
+          Caption = 'Database'
+          ParentColor = False
+        end
+        inherited edServer: TComboBox
+        end
+        inherited edUsername: TEdit
+        end
+        inherited edPassword: TEdit
+        end
+        object edDatabase: TComboBox
+          Left = 104
+          Height = 21
+          Top = 114
+          Width = 153
+          AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+          ItemHeight = 13
+          OnChange = edDatabaseChange
+          OnGetItems = edDatabaseDropDown
+          OnExit = edDatabaseExit
+          OnKeyUp = edDatabaseKeyUp
+          TabOrder = 3
+        end
+      end
+      inherited btConnect: TButton
+      end
+      inherited btDisconnect: TButton
+      end
+      inherited cbLoginPrompt: TCheckBox
+      end
+      object rgAuth: TRadioGroup
+        Left = 296
+        Height = 65
+        Top = 32
+        Width = 121
+        AutoFill = True
+        Caption = 'Authentication'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 47
+        ClientWidth = 117
+        Items.Strings = (
+          'Windows'
+          'SQL Server'
+        )
+        OnClick = rgAuthClick
+        TabOrder = 4
+      end
+    end
+    inherited shInfo: TTabSheet
+      ClientHeight = 202
+      ClientWidth = 429
+      inherited meInfo: TMemo
+      end
+    end
+    inherited shAbout: TTabSheet
+      inherited Label1: TLabel
+        Width = 351
+        Caption = 'SQL Server Data Access Components'
+      end
+      inherited Label2: TLabel
+      end
+      inherited lbVersion: TLabel
+      end
+      inherited Label3: TLabel
+      end
+      inherited Label5: TLabel
+      end
+      inherited Label6: TLabel
+      end
+      inherited lbWeb: TLabel
+        Width = 101
+        Caption = 'www.devart.com/sdac'
+      end
+      inherited lbMail: TLabel
+        Width = 80
+        Caption = 'sdac@devart.com'
+      end
+      inherited lbIDE: TLabel
+      end
+      inherited imPeng: TImage
+      end
+      inherited lbEdition: TLabel
+      end
+    end
+  end
+  inherited btClose: TButton
+  end
+  object btQueryAnalyzer: TButton
+    Left = 8
+    Height = 25
+    Top = 240
+    Width = 99
+    Anchors = [akLeft, akBottom]
+    Caption = 'Query Analyzer'
+    OnClick = btQueryAnalyzerClick
+    TabOrder = 3
+  end
+  object btManagementStudio: TButton
+    Left = 112
+    Height = 25
+    Top = 240
+    Width = 99
+    Anchors = [akLeft, akBottom]
+    Caption = 'Management Studio'
+    OnClick = btManagementStudioClick
+    TabOrder = 4
+  end
+end

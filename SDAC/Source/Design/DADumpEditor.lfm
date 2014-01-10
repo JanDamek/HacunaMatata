@@ -1,0 +1,142 @@
+inherited DADumpEditorForm: TDADumpEditorForm
+  Left = 44
+  Height = 468
+  Top = 58
+  VertScrollBar.Page = 467
+  Caption = 'DADumpEditorForm'
+  ClientHeight = 468
+  inherited BtnPanel: TPanel
+    Top = 427
+  end
+  object ClientPanel: TPanel[1]
+    Left = 0
+    Height = 427
+    Top = 0
+    Width = 511
+    Align = alClient
+    ClientHeight = 427
+    ClientWidth = 511
+    Constraints.MinHeight = 257
+    Constraints.MinWidth = 489
+    TabOrder = 1
+    object meSQL: TMemo
+      Left = 233
+      Height = 425
+      Top = 1
+      Width = 277
+      Align = alClient
+      OnExit = meSQLExit
+      ScrollBars = ssBoth
+      TabOrder = 1
+      WordWrap = False
+    end
+    object LeftPanel: TPanel
+      Left = 1
+      Height = 425
+      Top = 1
+      Width = 232
+      Align = alLeft
+      BevelOuter = bvNone
+      BevelWidth = 5
+      ClientHeight = 425
+      ClientWidth = 232
+      Constraints.MinHeight = 335
+      TabOrder = 0
+      object gbBackupOptions: TGroupBox
+        Left = 8
+        Height = 313
+        Top = 8
+        Width = 217
+        Caption = 'Backup Options'
+        ClientHeight = 295
+        ClientWidth = 213
+        TabOrder = 0
+        object lbTableNames: TLabel
+          Left = 8
+          Height = 14
+          Top = 20
+          Width = 62
+          Caption = 'Table Names'
+          ParentColor = False
+        end
+        object cbTableNames: TComboBox
+          Left = 8
+          Height = 21
+          Top = 40
+          Width = 197
+          Anchors = [akTop, akLeft, akRight]
+          ItemHeight = 13
+          OnChange = cbTableNamesChange
+          OnGetItems = cbTableNamesDropDown
+          TabOrder = 1
+        end
+        object cbGenerateHeader: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 128
+          Width = 108
+          Caption = 'Generate Header'
+          TabOrder = 0
+        end
+      end
+      object btBackup: TBitBtn
+        Left = 16
+        Height = 25
+        Top = 328
+        Width = 97
+        Caption = 'Backup'
+        NumGlyphs = 0
+        OnClick = btBackupClick
+        TabOrder = 1
+      end
+      object btRestore: TBitBtn
+        Left = 121
+        Height = 25
+        Top = 328
+        Width = 96
+        Caption = 'Restore'
+        NumGlyphs = 0
+        OnClick = btRestoreClick
+        TabOrder = 2
+      end
+      object btImport: TBitBtn
+        Left = 16
+        Height = 25
+        Top = 359
+        Width = 97
+        Caption = 'Import from file'
+        NumGlyphs = 0
+        OnClick = btImportClick
+        TabOrder = 3
+      end
+      object btExport: TBitBtn
+        Left = 120
+        Height = 25
+        Top = 359
+        Width = 97
+        Caption = 'Export to file'
+        NumGlyphs = 0
+        OnClick = btExportClick
+        TabOrder = 4
+      end
+    end
+  end
+  object OpenDialog: TOpenDialog[2]
+    Title = 'Open file...'
+    DefaultExt = '.sql'
+    Filter = 'Query files (*.sql)|*.sql|All files (*.*)|*.*'
+    FilterIndex = 0
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    left = 321
+    top = 25
+  end
+  object SaveDialog: TSaveDialog[3]
+    Title = 'Save as...'
+    DefaultExt = '.sql'
+    Filter = 'Query files (*.sql)|*.sql|All files (*.*)|*.*'
+    FilterIndex = 0
+    Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
+    left = 353
+    top = 25
+  end
+end

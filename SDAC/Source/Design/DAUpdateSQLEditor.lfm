@@ -1,0 +1,24 @@
+inherited DAUpdateSQLEditorForm: TDAUpdateSQLEditorForm
+  Left = 22
+  Top = 29
+  Caption = 'DAUpdateSQLEditorForm'
+  inherited BtnPanel: TPanel
+    inherited imCorner: TImage
+    end
+    inherited btOk: TBitBtn
+    end
+    inherited btCancel: TBitBtn
+    end
+  end
+  inherited PageControl: TPageControl
+    ActivePage = shEditSQL
+    TabIndex = 0
+    object shEditSQL: TTabSheet
+      Caption = '&Update SQLs'
+    end
+    object shGenerator: TTabSheet
+      Caption = 'SQL &Generator'
+      ImageIndex = 1
+    end
+  end
+end

@@ -1,0 +1,54 @@
+inherited DAQueryEditorForm: TDAQueryEditorForm
+  Left = 115
+  Top = 151
+  OnCloseQuery = FormCloseQuery
+  OnDestroy = FormDestroy
+  OnHide = FormHide
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  inherited BtnPanel: TPanel
+    inherited imCorner: TImage
+    end
+    inherited btOk: TBitBtn
+      OnClick = SaveClick
+      TabOrder = 2
+    end
+    inherited btCancel: TBitBtn
+      OnClick = CloseClick
+      TabOrder = 3
+    end
+    inherited btExecute: TButton
+      OnClick = btExecuteClick
+    end
+    object btnDataEditor: TBitBtn[4]
+      Left = 94
+      Height = 25
+      Top = 8
+      Width = 80
+      Anchors = [akLeft, akBottom]
+      Caption = '&Data Editor...'
+      NumGlyphs = 0
+      OnClick = btnDataEditorClick
+      TabOrder = 1
+    end
+  end
+  inherited PageControl: TPageControl
+    OnChange = PageControlChange
+    OnChanging = PageControlChanging
+    OnPageChanged = PageControlChange
+    inherited shSQL: TTabSheet
+    end
+    inherited shParameters: TTabSheet
+    end
+    inherited shMacros: TTabSheet
+    end
+    inherited shGeneratorSPC: TTabSheet
+    end
+    object shEditSQL: TTabSheet[4]
+      Caption = '&Update SQLs'
+    end
+    object shGenerator: TTabSheet[5]
+      Caption = 'SQL &Generator'
+    end
+  end
+end

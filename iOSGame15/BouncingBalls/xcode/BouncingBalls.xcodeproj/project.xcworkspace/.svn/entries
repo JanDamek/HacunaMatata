@@ -1,0 +1,40 @@
+10
+
+dir
+183
+https://klient.helios.eu:8443/svn/jadro/HM/trunk/iOSGame15/BouncingBalls/xcode/BouncingBalls.xcodeproj/project.xcworkspace
+https://klient.helios.eu:8443/svn/jadro
+
+
+
+2012-08-03T14:36:52.335101Z
+172
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3c6bede2-e4c5-9441-8b77-7547e64fddda
+
+contents.xcworkspacedata
+file
+
+
+
+
+2012-05-17T09:19:30.000000Z
+5736cae2dc006d93fe624c7d31a43d4e
+2012-05-17T09:18:59.563687Z
+106
+jan.damek
+

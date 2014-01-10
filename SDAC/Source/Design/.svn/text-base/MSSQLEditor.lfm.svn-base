@@ -1,0 +1,36 @@
+inherited MSSQLEditorForm: TMSSQLEditorForm
+  Left = 132
+  Top = 174
+  Caption = 'MSSQLEditorForm'
+  inherited BtnPanel: TPanel
+    inherited imCorner: TImage
+    end
+    inherited btOk: TBitBtn
+    end
+    inherited btCancel: TBitBtn
+    end
+    inherited btExecute: TButton
+      Width = 99
+    end
+    object btQueryAnalyzer: TButton
+      Left = 112
+      Height = 25
+      Top = 8
+      Width = 99
+      Anchors = [akLeft, akBottom]
+      Caption = 'Query Analyzer'
+      OnClick = btQueryAnalyzerClick
+      TabOrder = 3
+    end
+    object btManagementStudio: TButton
+      Left = 216
+      Height = 25
+      Top = 8
+      Width = 99
+      Anchors = [akLeft, akBottom]
+      Caption = 'Management Studio'
+      OnClick = btManagementStudioClick
+      TabOrder = 4
+    end
+  end
+end

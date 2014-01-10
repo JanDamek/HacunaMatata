@@ -1,0 +1,41 @@
+inherited CRTabEditorForm: TCRTabEditorForm
+  Left = 176
+  Height = 332
+  Top = 232
+  Width = 512
+  HorzScrollBar.Page = 511
+  VertScrollBar.Page = 331
+  ClientHeight = 332
+  ClientWidth = 512
+  Constraints.MinHeight = 332
+  Constraints.MinWidth = 512
+  Font.Height = -11
+  OnDestroy = FormDestroy
+  inherited BtnPanel: TPanel
+    Top = 291
+    Width = 512
+    ClientWidth = 512
+    TabOrder = 1
+    inherited imCorner: TImage
+      Left = 500
+    end
+    inherited btOk: TBitBtn
+      Left = 348
+    end
+    inherited btCancel: TBitBtn
+      Left = 429
+    end
+  end
+  object PageControl: TPageControl
+    Left = 8
+    Height = 280
+    Top = 8
+    Width = 496
+    TabStop = False
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 0
+    OnChange = PageControlChange
+    OnChanging = PageControlChanging
+    OnPageChanged = PageControlChange
+  end
+end

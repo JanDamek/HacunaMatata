@@ -1,0 +1,469 @@
+10
+
+dir
+183
+https://klient.helios.eu:8443/svn/jadro/HM/trunk/synedit/design
+https://klient.helios.eu:8443/svn/jadro
+
+
+
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3c6bede2-e4c5-9441-8b77-7547e64fddda
+
+README.txt
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+bf800e15947c6e7e7ec0b8fbd8c8691e
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+
+syneditlazdsgn.bat
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+07260b99f7deb9467c6ad8d11fc895ec
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+
+syneditlazdsgn.txt
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+8d418d140291222a8d52b9b9b10b4347
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+
+tsynanysyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+0bc78ed1797d27b79353540c9e68dfc6
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynautocomplete.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+01b8502a8f30f5a7eeb2ebc210edc200
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynbatsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+a04ba2a907b3dec4979ce2913c6ca969
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsyncppsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+7b663e0c62a868a69f3a381a7dea9065
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsyncsssyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+79de5955450257cecb4e80f9343dda38
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsyndiffsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+dd928903afe03aaa34a5fbbda02beb2f
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynedit.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+e8b689837594e7cd5962893f807fa0aa
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynexporterhtml.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+ee3646863566d087a1bd89d0ba341185
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynfreepascalsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+41f4f667cb84e9abca2da25a2881a35e
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynhtmlsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+915e2695afa582d5345720aa8a4ecfbb
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsyninisyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+a0b7cb461decef7865ba4e330cdc963a
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynjavasyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+ef94daf8b0f408e386291cfaf55749b3
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynlfmsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+383296c7564e43e6f083d674e22ae4ca
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynmacrorecorder.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+d479b62045b8237edf286d1a55ec2bca
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynmemo.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+33dc43f73b288d0a0d320f3fe6aa6c81
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynmultisyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+808a0345330633e27e8abf8cb49a52ef
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynpassyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+d4a41bb5d649eaeead656e0e4a538018
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynperlsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+197cdecc478536df49e1f65dd8ec5374
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynphpsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+cd80216fbe00fbad4816bb1611a1e2cc
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynpluginsyncroedit.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+a77ecb290455ac741ac2043ce5407536
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynposyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+b68491948a4e7d4d9ceab0711a9c8ab8
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynpythonsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+75a9d55232139563cb180f6caa28c0cd
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynsqlsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+a7c8dfa881a61ea48f898745bcede8dd
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsyntexsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+7857510881b6431f512826c836521a4a
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynunixshellscriptsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+052936a452454f495d046192c75cf699
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynvbsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+b361238d35661bdfcf3c20777ae5f779
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tsynxmlsyn.png
+file
+
+
+
+
+2012-08-03T13:44:14.000000Z
+4adffefe37174bbd8a4c0f25237b131d
+2012-07-25T09:21:18.609945Z
+165
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+

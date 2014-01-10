@@ -1,0 +1,58 @@
+package sdac160;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$DEFINE SDAC}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'SQL Server Data Access Components'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  dbrtl,
+  dac160;
+
+contains
+  OLEDBAccess in '..\OLEDBAccess.pas',
+  MSAccess in '..\MSAccess.pas',
+  oledbc in '..\oledbc.pas',
+  MSSQLMonitor in '..\MSSQLMonitor.pas',
+  MSParser in '..\MSParser.pas',
+  MSConsts in '..\MSConsts.pas',
+  MSScript in '..\MSScript.pas',
+  OLEDBIntf in '..\OLEDBIntf.pas',
+  CRThread in '..\CRThread.pas',
+  MSUDT in '..\MSUDT.pas',
+  MSConnectionPool in '..\MSConnectionPool.pas',
+  MSServiceBroker in '..\MSServiceBroker.pas',
+  MSDump in '..\MSDump.pas',
+  MSLoader in '..\MSLoader.pas',
+  MSCompactConnection in '..\MSCompactConnection.pas',
+  MSServices in '..\MSServices.pas',
+  MSScriptProcessor in '..\MSScriptProcessor.pas',
+  MSTransaction in '..\MSTransaction.pas';
+
+end.

@@ -1,0 +1,68 @@
+10
+
+dir
+183
+https://klient.helios.eu:8443/svn/jadro/HM/trunk/tskin/Source
+https://klient.helios.eu:8443/svn/jadro
+
+
+
+2012-07-13T06:49:57.279140Z
+161
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3c6bede2-e4c5-9441-8b77-7547e64fddda
+
+FMX.Skin.RES
+file
+
+
+
+
+2012-08-03T13:43:44.000000Z
+e229a0b023f9817efbb30e662e06e32b
+2012-07-12T10:15:53.193203Z
+159
+jan.damek
+has-props
+
+FMX.Skin.pas
+file
+
+
+
+
+2012-08-03T13:43:44.000000Z
+805a6bc306570bded3b5464b5de25338
+2012-07-13T06:49:57.279140Z
+161
+jan.damek
+
+Res
+dir
+
+dclfmxskin160.dpk
+file
+
+
+
+
+2012-08-03T13:43:44.000000Z
+73c2ce0bbaecc2078452b83c78f2cdf0
+2012-07-12T10:15:53.193203Z
+159
+jan.damek
+

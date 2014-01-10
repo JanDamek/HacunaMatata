@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 80
+Bin
+DbToolsInterfaces
+Demos
+FAQ.html
+Help
+Images
+Include
+Lib
+*.html
+*.rtf
+*.txt
+
+END

@@ -1,0 +1,62 @@
+inherited DAScriptEditorForm: TDAScriptEditorForm
+  inherited BtnPanel: TPanel
+    inherited imCorner: TImage
+    end
+    inherited btOk: TBitBtn
+      TabOrder = 4
+    end
+    inherited btCancel: TBitBtn
+      TabOrder = 5
+    end
+    object btExecute: TButton
+      Left = 8
+      Height = 25
+      Top = 8
+      Width = 80
+      Anchors = [akLeft, akBottom]
+      Caption = 'Execute'
+      OnClick = btExecuteClick
+      TabOrder = 0
+    end
+    object cbDebug: TCheckBox
+      Left = 269
+      Height = 19
+      Top = 12
+      Width = 58
+      Caption = '&Debug'
+      OnClick = cbDebugClick
+      TabOrder = 3
+    end
+    object btOpen: TButton
+      Left = 94
+      Height = 25
+      Hint = 'Load from file'
+      Top = 8
+      Width = 80
+      Caption = '&Load...'
+      OnClick = btOpenClick
+      TabOrder = 1
+    end
+    object btSave: TButton
+      Left = 180
+      Height = 25
+      Hint = 'Save to file'
+      Top = 8
+      Width = 80
+      Caption = '&Save...'
+      OnClick = btSaveClick
+      TabOrder = 2
+    end
+  end
+  inherited PageControl: TPageControl
+    ActivePage = shSQL
+    TabIndex = 0
+    object shSQL: TTabSheet
+      Caption = 'S&QL'
+    end
+    object shMacros: TTabSheet
+      Caption = '&Macros'
+      ImageIndex = 2
+    end
+  end
+end

@@ -1,0 +1,32 @@
+inherited MSParamsFrame: TMSParamsFrame
+  inherited lbPName: TLabel
+  end
+  inherited lbParamLog: TLabel
+  end
+  inherited lbItemName: TListBox
+  end
+  inherited PanelItem: TPanel
+    inherited lbPType: TLabel
+    end
+    inherited lbParamType: TLabel
+    end
+    inherited lbPValue: TLabel
+    end
+    inherited lbSize: TLabel
+    end
+    inherited lbNullValue: TLabel
+    end
+    inherited cbNullValue: TCheckBox
+    end
+    inherited cbDataType: TComboBox
+    end
+    inherited cbParamType: TComboBox
+    end
+    inherited edValue: TEdit
+    end
+    inherited bEdValue: TButton
+    end
+    inherited edSize: TEdit
+    end
+  end
+end

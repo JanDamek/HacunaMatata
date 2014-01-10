@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 43
+__history
+*.local
+*.identcache
+*.tvsconfig
+
+END

@@ -1,0 +1,246 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{1ace60bb-2bff-4717-9389-4c2ab1bbb8f6}</ProjectGuid>
+			<MainSource>dcldac160.dpk</MainSource>
+			<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<DCC_DependencyCheckOutputName>dcldac160.bpl</DCC_DependencyCheckOutputName>
+			<ProjectVersion>13.4</ProjectVersion>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Base>True</Base>
+			<AppType>Package</AppType>
+			<FrameworkType>VCL</FrameworkType>
+			<Platform Condition="'$(Platform)'==''">Win32</Platform>
+			<TargetedPlatforms>1</TargetedPlatforms>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+			<Base_Win64>true</Base_Win64>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+			<Base_Win32>true</Base_Win32>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_Release)'!=''">
+			<Cfg_Release>true</Cfg_Release>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_Debug)'!=''">
+			<Cfg_Debug>true</Cfg_Debug>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_Debug)'=='true') or '$(Cfg_Debug_Win32)'!=''">
+			<Cfg_Debug_Win32>true</Cfg_Debug_Win32>
+			<CfgParent>Cfg_Debug</CfgParent>
+			<Cfg_Debug>true</Cfg_Debug>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_DcuOutput>C:\Projekt\pluginFM\dcu\$(Platform)\$(Config)</DCC_DcuOutput>
+			<DCC_DcpOutput>C:\Projekt\pluginFM\dcu\$(Platform)\$(Config)</DCC_DcpOutput>
+			<DCC_BplOutput>C:\Projekt\pluginFM\pck\$(Platform)\$(Config)</DCC_BplOutput>
+			<DCC_UsePackage>rtl;dbrtl;dac160;$(DCC_UsePackage)</DCC_UsePackage>
+			<VerInfo_Build>10000</VerInfo_Build>
+			<VerInfo_Keys>CompanyName=Devart;FileDescription=;FileVersion=8.1.6.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=DAC;ProductVersion=8.1.6.0;Comments=</VerInfo_Keys>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<VerInfo_MajorVer>8</VerInfo_MajorVer>
+			<VerInfo_Locale>1029</VerInfo_Locale>
+			<VerInfo_Release>6</VerInfo_Release>
+			<VerInfo_MinorVer>1</VerInfo_MinorVer>
+			<DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+			<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+			<DCC_UnitSearchPath>..;..\Design;$(BDS)\source\ToolsAPI;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DesignOnlyPackage>true</DesignOnlyPackage>
+			<DCC_DependencyCheckOutputName>dcldac160.bpl</DCC_DependencyCheckOutputName>
+			<DCC_Description>Devart Data Access Components</DCC_Description>
+			<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+			<GenDll>true</GenDll>
+			<GenPackage>true</GenPackage>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win64)'!=''">
+			<DCC_UsePackage>vcl;vclactnband;vcldb;dacvcl160;$(DCC_UsePackage)</DCC_UsePackage>
+			<Icon_MainIcon>dcldac160_Icon.ico</Icon_MainIcon>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win32)'!=''">
+			<DCC_UsePackage>vcl;vclactnband;vcldb;dacvcl160;$(DCC_UsePackage)</DCC_UsePackage>
+			<Icon_MainIcon>dcldac160_Icon.ico</Icon_MainIcon>
+			<DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_Release)'!=''">
+			<DCC_WriteableConstants>true</DCC_WriteableConstants>
+			<Version>7.0</Version>
+			<DCC_DebugInformation>False</DCC_DebugInformation>
+			<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_Debug)'!=''">
+			<Version>7.0</Version>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_Debug_Win32)'!=''">
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="$(MainSource)">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="rtl.dcp"/>
+			<DCCReference Include="dac160.dcp"/>
+			<DCCReference Include="dcldb.dcp"/>
+			<DCCReference Include="dacvcl160.dcp"/>
+			<DCCReference Include="vcl.dcp"/>
+			<DCCReference Include="dbrtl.dcp"/>
+			<DCCReference Include="vcldb.dcp"/>
+			<DCCReference Include="vclactnband.dcp"/>
+			<DCCReference Include="..\Design\DacReg.pas"/>
+			<DCCReference Include="..\Design\VTDesign.pas"/>
+			<DCCReference Include="..\Design\DAMenu.pas"/>
+			<DCCReference Include="..\Design\DADesign.pas"/>
+			<DCCReference Include="..\Design\Download.pas"/>
+			<DCCReference Include="..\Design\VTDataEditor.pas"/>
+			<DCCReference Include="..\Design\DAConnectionEditor.pas"/>
+			<DCCReference Include="..\Design\HelpUtils.pas"/>
+			<DCCReference Include="..\Design\DATableEditor.pas"/>
+			<DCCReference Include="..\Design\DAStoredProcEditor.pas"/>
+			<DCCReference Include="..\Design\DAScriptEditor.pas"/>
+			<DCCReference Include="..\Design\DADumpEditor.pas"/>
+			<DCCReference Include="..\Design\DADumpProgress.pas"/>
+			<DCCReference Include="..\Design\DADualListEditor.pas"/>
+			<DCCReference Include="..\Design\DAMacrosFrame.pas"/>
+			<DCCReference Include="..\Design\CRColFrame.pas"/>
+			<DCCReference Include="..\Design\DASQLComponentEditor.pas"/>
+			<DCCReference Include="..\Design\DASPCallFrame.pas"/>
+			<DCCReference Include="..\Design\DAUpdateSQLFrame.pas"/>
+			<DCCReference Include="..\Design\DAUpdateSQLEditor.pas"/>
+			<DCCReference Include="..\Design\DASQLGeneratorFrame.pas"/>
+			<DCCReference Include="..\Design\DAQueryEditor.pas"/>
+			<DCCReference Include="..\Design\DADataEditor.pas"/>
+			<DCCReference Include="..\Design\CRDataEditor.pas"/>
+			<DCCReference Include="..\Design\DAParamsFrame.pas"/>
+			<DCCReference Include="..\Design\DASQLFrame.pas"/>
+			<DCCReference Include="..\Design\CRTabEditor.pas"/>
+			<DCCReference Include="..\Design\CRFrame.pas"/>
+			<DCCReference Include="..\Design\CREditor.pas"/>
+			<DCCReference Include="..\Design\DAParamValueEditor.pas"/>
+			<DCCReference Include="..\Design\DATableSQLFrame.pas"/>
+			<DCCReference Include="..\Design\DADesignUtils.pas"/>
+			<DCCReference Include="..\Design\DAEditor.pas"/>
+			<DCCReference Include="..\Design\CRDesign.pas"/>
+			<DCCReference Include="..\Design\CRDesignUtils.pas"/>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_Release</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_Debug</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>Package</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Parameters/>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Type="Integer" Name="MajorVer">8</VersionInfo>
+						<VersionInfo Type="Integer" Name="MinorVer">1</VersionInfo>
+						<VersionInfo Type="Integer" Name="Release">6</VersionInfo>
+						<VersionInfo Type="Integer" Name="Build">10000</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1029</VersionInfo>
+						<VersionInfo Name="CodePage">1250</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Type="String" Name="FileVersion">8.1.6.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName">DAC</VersionInfoKeys>
+						<VersionInfoKeys Type="String" Name="ProductVersion">8.1.6.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">dcldac160.dpk</Source>
+					</Source>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\VclSmp160.bpl">Embarcadero Sample Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\svnui160.bpl">User interface code for subversion integration</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\svn160.bpl">Subversion integration</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\FMXTeeUI9160.bpl">TeeChart FMX User Interface</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\FMXTee9160.bpl">TeeChart for FireMonkey</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bdertl160.bpl">Embarcadero BDE Database Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\TeeUI9160.bpl">TeeChart User Interface Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\TeeDB9160.bpl">TeeChart Database Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\Tee9160.bpl">TeeChart Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bindengine160.bpl">Embarcadero LiveBindings Runtime Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bindcomp160.bpl">Embarcadero LiveBindings Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bindcompfmx162.bpl">Embarcadero LiveBindings Components Firemonkey</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bindcompvcl160.bpl">Embarcadero LiveBindings Components VCL</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vcldbx160.bpl">Embarcadero Compatibility Database Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vcldb160.bpl">Embarcadero Database Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vcltouch160.bpl">Embarcadero Touch VCL Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dsnapcon160.bpl">Embarcadero DataSnap Connection Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vcldsnap160.bpl">Embarcadero Vcl DataSnap Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vclib160.bpl">Embarcadero InterBase Express VCL Controls</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\ibxpress160.bpl">Embarcadero InterBase Express Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\adortl160.bpl">Embarcadero ADO Database Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\IndyCore160.bpl">Indy 10 Core</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\IndySystem160.bpl">Indy 10 System</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\IndyProtocols160.bpl">Indy 10 Protocols</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\intrawebdb_120_160.bpl">IntraWeb 12.0 Runtime DB Package for RAD Studio XE2</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\Intraweb_120_160.bpl">IntraWeb 12.0 Runtime Package for RAD Studio XE2</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\inetdb160.bpl">Embarcadero Internet/World Wide Web database components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\webdsnap160.bpl">Embarcadero InternetExpress Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\inetdbbde160.bpl">(untitled)</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\inetdbxpress160.bpl">(untitled)</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\websnap160.bpl">Embarcadero WebSnap Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\vclribbon160.bpl">Embarcadero Ribbon Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\DBXMySQLDriver160.bpl">Embarcadero MySQL Client</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\DBXInterBaseDriver160.bpl">Embarcadero InterBase Client</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\IPIndyImpl160.bpl">Embarcadero IP Indy Implementation</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dbxcds160.bpl">Embarcadero SimpleDataSet Component (DBX)</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\CloudService160.bpl">Embarcadero Cloud Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\fmxobj162.bpl">Embarcadero FMX OBJ Import Library</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\fmxdae162.bpl">Embarcadero FMX DAE Import Library</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\fmxase162.bpl">Embarcadero FMX ASE Import Library</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k160.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\office2K160.bpl">(untitled)</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp160.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win64">False</Platform>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

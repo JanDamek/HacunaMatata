@@ -1,0 +1,130 @@
+10
+
+dir
+183
+https://klient.helios.eu:8443/svn/jadro/HM/trunk/tskin/Source/Res
+https://klient.helios.eu:8443/svn/jadro
+
+
+
+2012-07-12T10:15:53.193203Z
+159
+jan.damek
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3c6bede2-e4c5-9441-8b77-7547e64fddda
+
+FMX.Skin.rc
+file
+
+
+
+
+2012-08-03T13:43:44.000000Z
+c3d051f5514c421c73fcc69778529519
+2012-07-12T10:15:53.193203Z
+159
+jan.damek
+
+tskin.bmp
+file
+
+
+
+
+2012-08-03T13:43:44.000000Z
+88cb6011127da6e8d3317b41dc0f16c0
+2012-07-12T10:15:53.193203Z
+159
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tskin16.bmp
+file
+
+
+
+
+2012-08-03T13:43:44.000000Z
+a370582c7529a4c5404f9a1ae5662e65
+2012-07-12T10:15:53.193203Z
+159
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tskin32.bmp
+file
+
+
+
+
+2012-08-03T13:43:44.000000Z
+daad12313c93f0706c1e05559fad1e9f
+2012-07-12T10:15:53.193203Z
+159
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tskinanimation.bmp
+file
+
+
+
+
+2012-08-03T13:43:44.000000Z
+9b9545847ec86eb5e546d3e841ee3c07
+2012-07-12T10:15:53.193203Z
+159
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tskinanimation16.bmp
+file
+
+
+
+
+2012-08-03T13:43:44.000000Z
+9cfd1253c273092458f3278157ae0a72
+2012-07-12T10:15:53.193203Z
+159
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+tskinanimation32.bmp
+file
+
+
+
+
+2012-08-03T13:43:44.000000Z
+2d2e4a53ced0dc1104ba14bb6199aa9f
+2012-07-12T10:15:53.193203Z
+159
+jan.damek
+has-props
+
+svn:special svn:externals svn:needs-lock
+

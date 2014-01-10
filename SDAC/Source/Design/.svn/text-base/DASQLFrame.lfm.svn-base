@@ -1,0 +1,27 @@
+inherited DASQLFrame: TDASQLFrame
+  object Panel1: TPanel
+    Height = 229
+    Width = 481
+    Align = alClient
+    Anchors = [akTop, akLeft]
+    BevelOuter = bvNone
+    BorderWidth = 8
+    ClientHeight = 229
+    ClientWidth = 481
+    TabOrder = 0
+    object meSQL: TMemo
+      Left = 8
+      Height = 213
+      Top = 8
+      Width = 465
+      Align = alClient
+      Font.Height = -12
+      Font.Name = 'Courier New'
+      Font.Pitch = fpVariable
+      OnExit = meSQLExit
+      ScrollBars = ssBoth
+      TabOrder = 0
+      WordWrap = False
+    end
+  end
+end

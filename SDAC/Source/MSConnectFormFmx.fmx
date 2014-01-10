@@ -1,0 +1,107 @@
+object MSConnectForm: TMSConnectForm
+  Left = 368
+  Top = 255
+  BiDiMode = bdLeftToRight
+  Caption = 'Connect'
+  BorderStyle = bsSingle
+  BorderIcons = [biSystemMenu]
+  ClientHeight = 202
+  ClientWidth = 291
+  Position = poScreenCenter
+  Transparency = False
+  Visible = False
+  ActiveControl = edUsername
+  StyleLookup = 'backgroundstyle'
+  Left = 368
+  Top = 255
+  object Panel: TPanel
+    Position.Point = '(8,8)'
+    Width = 273.000000000000000000
+    Height = 153.000000000000000000
+    TabOrder = 0
+    object lbUsername: TLabel
+      Position.Point = '(16,20)'
+      Width = 73.000000000000000000
+      Height = 13.000000000000000000
+      TabOrder = 0
+      Text = 'Username'
+    end
+    object lbPassword: TLabel
+      Position.Point = '(16,54)'
+      Width = 73.000000000000000000
+      Height = 13.000000000000000000
+      TabOrder = 1
+      Text = 'Password'
+    end
+    object lbServer: TLabel
+      Position.Point = '(16,88)'
+      Width = 73.000000000000000000
+      Height = 13.000000000000000000
+      TabOrder = 2
+      Text = 'Server'
+    end
+    object lbDatabase: TLabel
+      Position.Point = '(16,124)'
+      Width = 73.000000000000000000
+      Height = 13.000000000000000000
+      TabOrder = 3
+      Text = 'Database'
+    end
+    object edUsername: TEdit
+      Position.Point = '(104,16)'
+      Width = 153.000000000000000000
+      Height = 21.000000000000000000
+      TabOrder = 4
+      ReadOnly = False
+      Password = False
+      Left = 104
+      Top = 16
+    end
+    object edPassword: TEdit
+      Position.Point = '(104,50)'
+      Width = 153.000000000000000000
+      Height = 21.000000000000000000
+      TabOrder = 5
+      ReadOnly = False
+      Password = True
+    end
+    object edServer: TEdit
+      Position.Point = '(104,84)'
+      Width = 153.000000000000000000
+      Height = 21.000000000000000000
+      TabOrder = 6
+      ReadOnly = False
+      Password = False
+    end
+    object edDatabase: TEdit
+      Position.Point = '(104,120)'
+      Width = 153.000000000000000000
+      Height = 21.000000000000000000
+      TabOrder = 7
+      ReadOnly = False
+      Password = False
+    end
+  end
+  object btConnect: TButton
+    Position.Point = '(52,169)'
+    Width = 89.000000000000000000
+    Height = 25.000000000000000000
+    OnClick = btConnectClick
+    TabOrder = 1
+    StaysPressed = False
+    IsPressed = False
+    Text = 'Connect'
+    Default = True
+  end
+  object btCancel: TButton
+    Position.Point = '(148,169)'
+    Width = 89.000000000000000000
+    Height = 25.000000000000000000
+    TabOrder = 2
+    StaysPressed = False
+    IsPressed = False
+    ModalResult = 2
+    Text = 'Cancel'
+    Cancel = True
+  end
+end

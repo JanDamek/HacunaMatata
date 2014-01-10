@@ -1,0 +1,138 @@
+inherited DAParamsFrame: TDAParamsFrame
+  object lbPName: TLabel[0]
+    Left = 16
+    Height = 14
+    Top = 8
+    Width = 81
+    Caption = 'Parameter Name'
+    ParentColor = False
+  end
+  object lbParamLog: TLabel[1]
+    Left = 9
+    Height = 17
+    Top = 6
+    Width = 6
+    Caption = ':'
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentColor = False
+  end
+  inherited lbItemName: TListBox
+  end
+  inherited PanelItem: TPanel
+    Height = 195
+    Top = 24
+    Width = 295
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    ClientHeight = 195
+    ClientWidth = 295
+    object lbPType: TLabel
+      Left = 16
+      Height = 14
+      Top = 16
+      Width = 51
+      Caption = 'Data Type'
+      ParentColor = False
+    end
+    object lbParamType: TLabel
+      Left = 198
+      Height = 14
+      Top = 16
+      Width = 58
+      Anchors = [akTop, akRight]
+      Caption = 'Param Type'
+      ParentColor = False
+    end
+    object lbPValue: TLabel
+      Left = 16
+      Height = 14
+      Top = 64
+      Width = 27
+      Caption = 'Value'
+      ParentColor = False
+    end
+    object lbSize: TLabel
+      Left = 192
+      Height = 14
+      Top = 125
+      Width = 20
+      Caption = 'Size'
+      ParentColor = False
+    end
+    object lbNullValue: TLabel
+      Left = 48
+      Height = 14
+      Top = 121
+      Width = 47
+      Caption = 'Null Value'
+      FocusControl = cbNullValue
+      ParentColor = False
+    end
+    object cbNullValue: TCheckBox
+      Left = 16
+      Height = 19
+      Top = 120
+      Width = 26
+      OnClick = cbNullValueClick
+      TabOrder = 4
+    end
+    object cbDataType: TComboBox
+      Left = 16
+      Height = 21
+      Top = 32
+      Width = 172
+      Anchors = [akTop, akLeft, akRight]
+      AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+      DropDownCount = 15
+      ItemHeight = 13
+      OnChange = cbDataTypeChange
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object cbParamType: TComboBox
+      Left = 198
+      Height = 21
+      Top = 32
+      Width = 80
+      Anchors = [akTop, akRight]
+      AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+      DropDownCount = 9
+      ItemHeight = 13
+      OnChange = cbParamTypeChange
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object edValue: TEdit
+      Left = 16
+      Height = 21
+      Top = 80
+      Width = 240
+      Anchors = [akTop, akLeft, akRight]
+      OnChange = edValueChange
+      TabOrder = 2
+    end
+    object bEdValue: TButton
+      Left = 257
+      Height = 21
+      Top = 80
+      Width = 21
+      Anchors = [akTop, akRight]
+      Caption = '...'
+      OnClick = bEdValueClick
+      TabOrder = 3
+    end
+    object edSize: TEdit
+      Left = 220
+      Height = 21
+      Top = 121
+      Width = 58
+      Anchors = [akTop, akLeft, akRight]
+      OnChange = edSizeChange
+      TabOrder = 5
+    end
+  end
+end

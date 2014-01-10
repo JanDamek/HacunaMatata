@@ -1,0 +1,21 @@
+K 10
+svn:ignore
+V 127
+dcu
+__history
+Win32
+Win64
+*.~dsk
+*.local
+*.dres
+*.dsk
+*.deployproj
+*.identcache
+*.zip
+*.tvsconfig
+LibrarySupport
+OSX32
+exe
+pck
+
+END

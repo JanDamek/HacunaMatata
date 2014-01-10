@@ -1,0 +1,3 @@
+Resource_1 VCLSTYLE "Styles\\AquaLightSlate.vsf"
+Icon_1 ICON "PluginFireMonkey_Icon.ico"
+Style1 RCDATA "Skins\\Anion\\Anion.style"

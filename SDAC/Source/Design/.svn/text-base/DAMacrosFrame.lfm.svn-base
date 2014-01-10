@@ -1,0 +1,67 @@
+inherited DAMacrosFrame: TDAMacrosFrame
+  object lbMName: TLabel[0]
+    Left = 19
+    Height = 14
+    Top = 8
+    Width = 60
+    Caption = 'Macro Name'
+    ParentColor = False
+  end
+  object lbMacroLog: TLabel[1]
+    Left = 8
+    Height = 17
+    Top = 7
+    Width = 12
+    Caption = '&&'
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ParentColor = False
+  end
+  inherited lbItemName: TListBox
+  end
+  inherited PanelItem: TPanel
+    BorderStyle = bsSingle
+    object lbMValue: TLabel
+      Left = 16
+      Height = 14
+      Top = 12
+      Width = 27
+      Caption = 'Value'
+      ParentColor = False
+    end
+    object lbActive: TLabel
+      Left = 40
+      Height = 14
+      Top = 190
+      Width = 31
+      Anchors = [akLeft, akBottom]
+      Caption = 'Active'
+      ParentColor = False
+    end
+    object meMacroValue: TMemo
+      Left = 13
+      Height = 157
+      Top = 27
+      Width = 266
+      Lines.Strings = (
+        ''
+      )
+      OnExit = meMacroValueExit
+      ScrollBars = ssBoth
+      TabOrder = 0
+      WordWrap = False
+    end
+    object cbMacroActive: TCheckBox
+      Left = 14
+      Height = 19
+      Top = 187
+      Width = 26
+      Anchors = [akLeft, akBottom]
+      OnClick = cbMacroActiveClick
+      TabOrder = 1
+    end
+  end
+end

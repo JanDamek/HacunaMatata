@@ -1,0 +1,9 @@
+object D: TD
+  Left = 0
+  Top = 0
+  ClientHeight = 518
+  ClientWidth = 541
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+end

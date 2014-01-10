@@ -1,0 +1,16 @@
+inherited DAStoredProcEditorForm: TDAStoredProcEditorForm
+  Left = 88
+  Top = 116
+  inherited BtnPanel: TPanel
+    inherited imCorner: TImage
+    end
+    inherited btOk: TBitBtn
+    end
+    inherited btCancel: TBitBtn
+    end
+    inherited btExecute: TButton
+    end
+    inherited btnDataEditor: TBitBtn
+    end
+  end
+end

@@ -1,0 +1,50 @@
+inherited MSStoredProcEditorForm: TMSStoredProcEditorForm
+  Left = 66
+  Top = 87
+  Width = 619
+  HorzScrollBar.Page = 618
+  Caption = 'MSStoredProcEditorForm'
+  ClientWidth = 619
+  inherited BtnPanel: TPanel
+    Width = 619
+    ClientWidth = 619
+    inherited imCorner: TImage
+      Left = 607
+    end
+    inherited btOk: TBitBtn
+      Left = 455
+    end
+    inherited btCancel: TBitBtn
+      Left = 536
+    end
+    inherited btExecute: TButton
+      Width = 99
+    end
+    inherited btnDataEditor: TBitBtn
+      Left = 110
+      Width = 99
+    end
+    object btnQuertAnalyzer: TBitBtn
+      Left = 212
+      Height = 25
+      Top = 8
+      Width = 99
+      Anchors = [akLeft, akBottom]
+      Caption = 'Query Analyzer'
+      NumGlyphs = 0
+      OnClick = btnQuertAnalyzerClick
+      TabOrder = 4
+    end
+    object btManagementStudio: TBitBtn
+      Left = 315
+      Height = 25
+      Top = 8
+      Width = 99
+      Anchors = [akLeft, akBottom]
+      Caption = 'Management Studio'
+      NumGlyphs = 0
+      OnClick = btManagementStudioClick
+      TabOrder = 5
+    end
+  end
+end

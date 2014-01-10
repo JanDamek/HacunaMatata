@@ -1,0 +1,98 @@
+inherited VTDataEditorForm: TVTDataEditorForm
+  Left = 44
+  Top = 58
+  Width = 671
+  HorzScrollBar.Page = 670
+  Caption = 'VTDataEditorForm'
+  ClientWidth = 671
+  inherited BtnPanel: TPanel
+    Width = 663
+    ClientWidth = 663
+    inherited imCorner: TImage
+      Left = 651
+    end
+    inherited btOk: TBitBtn
+      Left = 499
+    end
+    inherited btCancel: TBitBtn
+      Left = 580
+    end
+  end
+  inherited StatusBar: TStatusBar
+    Width = 671
+    Panels = <    
+      item
+        Width = 120
+      end    
+      item
+        Width = 120
+      end    
+      item
+        Width = 50
+      end>
+  end
+  inherited pnlToolBar: TPanel
+    Width = 671
+    ClientWidth = 671
+    inherited btClose: TSpeedButton
+      OnClick = CloseClick
+    end
+    object btSave: TSpeedButton[1]
+      Height = 23
+      Width = 75
+      Caption = 'Save'
+      Color = clBtnFace
+      NumGlyphs = 0
+      OnClick = SaveClick
+    end
+    object btClear: TSpeedButton[2]
+      Left = 162
+      Height = 23
+      Width = 75
+      Caption = 'Clear'
+      Color = clBtnFace
+      NumGlyphs = 0
+      OnClick = btClearClick
+    end
+    object btLoadFromFile: TSpeedButton[3]
+      Left = 237
+      Height = 23
+      Width = 75
+      Caption = 'Load from file'
+      Color = clBtnFace
+      NumGlyphs = 0
+      OnClick = btLoadFromFileClick
+    end
+    object btSaveToFile: TSpeedButton[4]
+      Left = 312
+      Height = 23
+      Width = 75
+      Caption = 'Save to file'
+      Color = clBtnFace
+      NumGlyphs = 0
+      OnClick = btSaveToFileClick
+    end
+    inherited DBNavigator: TDBNavigator
+      Left = 399
+      Hints.Strings = (      )
+    end
+  end
+  inherited DBGrid: TDBGrid
+    Width = 671
+  end
+  inherited DataSource: TDatasource
+  end
+  object OpenDialog: TOpenDialog
+    Title = 'Открыть существующий файл'
+    Filter = 'Virtual Table Data (*.vtd)|*.vtd|XML (*.xml)|*.xml|Any File (*.*)|*.*'
+    left = 352
+    top = 34
+  end
+  object SaveDialog: TSaveDialog
+    Title = 'Сохранить файл как'
+    FileName = 'Data1'
+    Filter = 'Virtual Table Data (*.vtd)|*.vtd|XML (*.xml)|*.xml|Any File (*.*)|*.*'
+    left = 384
+    top = 34
+  end
+end

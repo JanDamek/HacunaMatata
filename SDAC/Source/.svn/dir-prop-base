@@ -1,0 +1,17 @@
+K 10
+svn:ignore
+V 106
+CBuilder5
+CBuilder6
+Delphi10
+Delphi11
+Delphi12
+Delphi14
+Delphi15
+Delphi5
+Delphi6
+Delphi7
+Delphi9
+Lazarus1
+
+END

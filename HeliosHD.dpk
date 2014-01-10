@@ -1,0 +1,65 @@
+package HeliosHD;
+
+{$R *.res}
+{$R *.dres}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$DEFINE Distribuce}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  designide,
+  fmx,
+  dbrtl,
+  dac160,
+  Bindcomp,
+  Bindcompfmx;
+
+contains
+  FMX.Skin in 'tskin\Source\FMX.Skin.pas',
+  EditorComponentUnit in 'EditorComponentUnit.pas',
+  deType in 'deType.pas',
+  deEditory in 'deEditory.pas',
+  deUkoly in 'deUkoly.pas',
+  HeGrid in 'HeGrid.pas',
+  Forms in 'Forms.pas',
+  Graphics in 'Graphics.pas',
+  sqString in 'sqString.pas',
+  ddPlugin_TLB in 'ddPlugin_TLB.pas',
+  sqProc in 'sqProc.pas',
+  ddMain in 'ddMain.pas',
+  sqVazby in 'sqVazby.pas',
+  sqView in 'sqView.pas',
+  deMain in 'deMain.pas',
+  EditorUnit in 'EditorUnit.pas',
+  DefEditUserUnit in 'DefEditUserUnit.pas',
+  DefEditAttrUnit in 'DefEditAttrUnit.pas',
+  DefEditUnit in 'DefEditUnit.pas',
+  EditFormUnit in 'EditFormUnit.pas' {EditForm},
+  SearchTool in 'SearchTool.pas',
+  DefinatorEditoruUnit in 'DefinatorEditoruUnit.pas' {DefinatorEditoruForm};
+
+end.
+

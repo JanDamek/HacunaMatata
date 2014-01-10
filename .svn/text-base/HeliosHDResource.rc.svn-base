@@ -1,0 +1,5 @@
+Dismiss RCDATA "icons\\dismiss.png"
+Doit RCDATA "icons\\doit.png"
+Info RCDATA "icons\\info_sign.png"
+Error RCDATA "icons\\symbol-error.png"
+Warning RCDATA "icons\\warning_sign.png"

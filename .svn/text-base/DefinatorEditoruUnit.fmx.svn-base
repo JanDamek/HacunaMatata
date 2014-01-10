@@ -1,0 +1,212 @@
+inherited DefinatorEditoruForm: TDefinatorEditoruForm
+  Caption = 'Definator uzivatelsky definovanych editoru'
+  ClientHeight = 600
+  ClientWidth = 951
+  OnCreate = FormCreate
+  OnClose = FormClose
+  inherited TabControl1: TTabControl
+    Width = 951.000000000000000000
+    Height = 562.000000000000000000
+    inherited TabItem1: TTabItem
+      Width = 951.000000000000000000
+      inherited Panel2: TPanel
+        Width = 951.000000000000000000
+        Height = 542.000000000000000000
+      end
+    end
+    inherited TabItem2: TTabItem
+      Position.Point = '(544.5,0)'
+      inherited Panel3: TPanel
+        Width = 951.000000000000000000
+        Height = 502.000000000000000000
+      end
+    end
+  end
+  inherited Panel1: TPanel
+    Position.Point = '(0,560)'
+    Width = 951.000000000000000000
+    Visible = False
+    inherited Layout1: TLayout
+      Position.Point = '(763,0)'
+      inherited cancelBtn: TButton
+        Position.Point = '(96,8)'
+      end
+      inherited okBtn: TButton
+        Position.Point = '(8,8)'
+      end
+    end
+  end
+  object LayoutSpodniLista: TLayout
+    Align = alBottom
+    Position.Point = '(0,562)'
+    Width = 951.000000000000000000
+    Height = 38.000000000000000000
+    object Layout2: TLayout
+      Align = alFitRight
+      Position.Point = '(845,0)'
+      Width = 106.000000000000000000
+      Height = 38.000000000000000000
+      object Button1: TButton
+        Position.Point = '(16,8)'
+        Width = 80.000000000000000000
+        Height = 22.000000000000000000
+        OnClick = Button1Click
+        TabOrder = 0
+        Text = 'Zavrit'
+      end
+    end
+  end
+  object LayoutHlavniEditor: TLayout
+    Align = alClient
+    Width = 951.000000000000000000
+    Height = 562.000000000000000000
+    object LayoutHorniLista: TLayout
+      Align = alTop
+      Width = 951.000000000000000000
+      Height = 55.000000000000000000
+      object Layout10: TLayout
+        Align = alRight
+        Position.Point = '(759,0)'
+        Width = 192.000000000000000000
+        Height = 55.000000000000000000
+        object Button2: TButton
+          Position.Point = '(8,18)'
+          Width = 80.000000000000000000
+          Height = 22.000000000000000000
+          TabOrder = 0
+          Text = 'Nov'#253' editor'
+        end
+        object Button3: TButton
+          Position.Point = '(96,18)'
+          Width = 88.000000000000000000
+          Height = 22.000000000000000000
+          TabOrder = 1
+          Text = 'Smazat editor'
+        end
+      end
+      object Label1: TLabel
+        Position.Point = '(8,8)'
+        Width = 41.000000000000000000
+        Height = 15.000000000000000000
+        TabOrder = 1
+        Text = 'Editor:'
+      end
+      object EditorComboBox: TComboBox
+        Position.Point = '(8,24)'
+        Width = 409.000000000000000000
+        Height = 22.000000000000000000
+        TabOrder = 2
+        ItemIndex = -1
+      end
+    end
+    object LayoutLevySloupec: TLayout
+      Align = alLeft
+      Position.Point = '(0,55)'
+      Width = 217.000000000000000000
+      Height = 507.000000000000000000
+      object TabControl2: TTabControl
+        Align = alClient
+        Width = 217.000000000000000000
+        Height = 507.000000000000000000
+        TabOrder = 0
+        FullSize = True
+        TabIndex = 0
+        TabHeight = 20.000000000000000000
+        object TabItem20: TTabItem
+          Width = 108.500000000000000000
+          Height = 20.000000000000000000
+          TabOrder = 0
+          Index = 0
+          Text = 'Vlastnosti editoru'
+          WordWrap = False
+          object VlastnostiListBox: TListBox
+            Align = alClient
+            Width = 217.000000000000000000
+            Height = 487.000000000000000000
+            TabOrder = 0
+          end
+        end
+        object TabItem30: TTabItem
+          Position.Point = '(108.5,0)'
+          Width = 108.500000000000000000
+          Height = 20.000000000000000000
+          TabOrder = 1
+          Index = 1
+          Text = 'Atributy editoru'
+          WordWrap = False
+          object AtributyListBox: TListBox
+            Align = alClient
+            Width = 217.000000000000000000
+            Height = 487.000000000000000000
+            TabOrder = 0
+          end
+        end
+      end
+    end
+    object LayoutPravySloupec: TLayout
+      Align = alRight
+      Position.Point = '(803,55)'
+      Width = 148.000000000000000000
+      Height = 507.000000000000000000
+    end
+    object Splitter1: TSplitter
+      Align = alLeft
+      Cursor = crHSplit
+      Position.Point = '(217,55)'
+      Width = 5.000000000000000000
+      Height = 507.000000000000000000
+      TabOrder = 3
+      MinSize = 20.000000000000000000
+    end
+    object Splitter2: TSplitter
+      Align = alRight
+      Cursor = crHSplit
+      Position.Point = '(798,55)'
+      Width = 5.000000000000000000
+      Height = 507.000000000000000000
+      TabOrder = 4
+      MinSize = 20.000000000000000000
+    end
+    object Layout7: TLayout
+      Align = alClient
+      Position.Point = '(222,55)'
+      Width = 576.000000000000000000
+      Height = 507.000000000000000000
+      object LayoutMessageDolniLista: TLayout
+        Align = alBottom
+        Position.Point = '(0,457)'
+        Width = 576.000000000000000000
+        Height = 50.000000000000000000
+        object Memo2: TMemo
+          Align = alClient
+          Position.Point = '(0,17)'
+          Width = 576.000000000000000000
+          Height = 33.000000000000000000
+          TabOrder = 0
+          UseSmallScrollBars = True
+          ReadOnly = True
+          KeyboardType = vktDefault
+        end
+        object Layout11: TLayout
+          Align = alTop
+          Width = 576.000000000000000000
+          Height = 17.000000000000000000
+        end
+      end
+      object Splitter3: TSplitter
+        Align = alBottom
+        Cursor = crVSplit
+        Position.Point = '(0,452)'
+        Width = 576.000000000000000000
+        Height = 5.000000000000000000
+        TabOrder = 1
+        MinSize = 20.000000000000000000
+      end
+      object LayoutEditor: TLayout
+        Align = alClient
+        Width = 576.000000000000000000
+        Height = 452.000000000000000000
+      end
+    end
+  end
+end

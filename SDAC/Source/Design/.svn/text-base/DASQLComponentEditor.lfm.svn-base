@@ -1,0 +1,53 @@
+inherited DASQLEditorForm: TDASQLEditorForm
+  Left = 143
+  Top = 174
+  OnCloseQuery = FormCloseQuery
+  OnDestroy = FormDestroy
+  OnHide = FormHide
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  inherited BtnPanel: TPanel
+    inherited imCorner: TImage
+    end
+    inherited btOk: TBitBtn
+      OnClick = SaveClick
+      TabOrder = 1
+    end
+    inherited btCancel: TBitBtn
+      OnClick = CloseClick
+      TabOrder = 2
+    end
+    object btExecute: TButton[3]
+      Left = 8
+      Height = 25
+      Top = 8
+      Width = 80
+      Anchors = [akLeft, akBottom]
+      Caption = 'Execute'
+      OnClick = btExecuteClick
+      TabOrder = 0
+    end
+  end
+  inherited PageControl: TPageControl
+    ActivePage = shSQL
+    TabIndex = 0
+    OnChange = PageControlChange
+    OnChanging = PageControlChanging
+    OnPageChanged = PageControlChange
+    object shSQL: TTabSheet[0]
+      Caption = 'S&QL'
+    end
+    object shParameters: TTabSheet[1]
+      Caption = '&Parameters'
+      ImageIndex = 1
+    end
+    object shMacros: TTabSheet[2]
+      Caption = '&Macros'
+      ImageIndex = 2
+    end
+    object shGeneratorSPC: TTabSheet[3]
+      Caption = 'S&tored Proc Call Generator'
+      ImageIndex = 3
+    end
+  end
+end

@@ -1,0 +1,94 @@
+inherited CRDataEditorForm: TCRDataEditorForm
+  Left = 154
+  Height = 360
+  Top = 203
+  Width = 697
+  HorzScrollBar.Page = 696
+  VertScrollBar.Page = 359
+  ActiveControl = DBGrid
+  Caption = 'CRDataEditorForm'
+  ClientHeight = 360
+  ClientWidth = 697
+  inherited BtnPanel: TPanel
+    Top = 292
+    Width = 689
+    Align = alNone
+    ClientWidth = 689
+    TabOrder = 2
+    Visible = False
+    inherited imCorner: TImage
+      Left = 677
+    end
+    inherited btOk: TBitBtn
+      Left = 525
+    end
+    inherited btCancel: TBitBtn
+      Left = 606
+    end
+  end
+  object StatusBar: TStatusBar
+    Height = 23
+    Top = 337
+    Width = 697
+    Panels = <    
+      item
+        Width = 120
+      end    
+      item
+        Width = 120
+      end    
+      item
+        Width = 50
+      end>
+  end
+  object pnlToolBar: TPanel
+    Height = 22
+    Width = 697
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 22
+    ClientWidth = 697
+    TabOrder = 0
+    object btClose: TSpeedButton
+      Left = 75
+      Height = 23
+      Width = 75
+      Caption = '&Close'
+      Color = clBtnFace
+      NumGlyphs = 0
+    end
+    object DBNavigator: TDBNavigator
+      Left = 425
+      Height = 22
+      Width = 240
+      BevelOuter = bvNone
+      ClientHeight = 22
+      ClientWidth = 240
+      DataSource = DataSource
+      TabOrder = 0
+    end
+  end
+  object DBGrid: TDBGrid
+    Height = 315
+    Top = 22
+    Width = 697
+    Align = alClient
+    DataSource = DataSource
+    FixedColor = clBtnFace
+    FixedHotColor = cl3DLight
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    OptionsExtra = [dgeAutoColumns, dgeCheckboxColumn]
+    ParentColor = False
+    TabOrder = 1
+    TabStop = True
+    TitleFont.Height = 13
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Pitch = fpVariable
+  end
+  object DataSource: TDatasource
+    OnStateChange = DataSourceStateChange
+    OnDataChange = DataSourceDataChange
+    left = 16
+    top = 48
+  end
+end

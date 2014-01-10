@@ -1,0 +1,75 @@
+inherited DATableSQLFrame: TDATableSQLFrame
+  object Label2: TLabel
+    Left = 8
+    Height = 14
+    Top = 20
+    Width = 57
+    Caption = 'Table Name'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 14
+    Top = 44
+    Width = 59
+    Caption = 'Order Fields'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 14
+    Top = 67
+    Width = 44
+    Caption = 'FilterSQL'
+    ParentColor = False
+  end
+  object cbTableName: TComboBox
+    Left = 96
+    Height = 21
+    Top = 16
+    Width = 376
+    Anchors = [akTop, akLeft, akRight]
+    AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+    DropDownCount = 16
+    ItemHeight = 13
+    OnGetItems = cbTableNameDropDown
+    OnExit = cbTableNameExit
+    TabOrder = 0
+  end
+  object edOrderFields: TEdit
+    Left = 96
+    Height = 21
+    Top = 40
+    Width = 376
+    Anchors = [akTop, akLeft, akRight]
+    OnExit = edOrderFieldsExit
+    TabOrder = 1
+  end
+  object edFilter: TEdit
+    Left = 96
+    Height = 21
+    Top = 64
+    Width = 376
+    Anchors = [akTop, akLeft, akRight]
+    OnExit = edFilterExit
+    TabOrder = 2
+  end
+  object meSQL: TMemo
+    Left = 7
+    Height = 132
+    Top = 88
+    Width = 465
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Color = clBtnFace
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Pitch = fpVariable
+    Lines.Strings = (
+      ''
+    )
+    ReadOnly = True
+    ScrollBars = ssBoth
+    TabOrder = 3
+    WordWrap = False
+  end
+end

@@ -1,0 +1,36 @@
+object ValueEditDlg: TValueEditDlg
+  Left = 226
+  Height = 279
+  Top = 123
+  Width = 427
+  HorzScrollBar.Page = 426
+  VertScrollBar.Page = 278
+  ActiveControl = CancelButton
+  BorderStyle = bsDialog
+  Caption = 'Value List editor'
+  ClientHeight = 279
+  ClientWidth = 427
+  OnCreate = FormCreate
+  ParentFont = True
+  Position = poScreenCenter
+  object OKButton: TButton
+    Left = 265
+    Height = 25
+    Top = 248
+    Width = 75
+    Caption = '&OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object CancelButton: TButton
+    Left = 345
+    Height = 25
+    Top = 248
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 0
+  end
+end

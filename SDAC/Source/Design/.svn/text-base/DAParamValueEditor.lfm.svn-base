@@ -1,0 +1,36 @@
+inherited DAParamValueEditor: TDAParamValueEditor
+  Left = 154
+  Height = 332
+  Top = 203
+  Width = 513
+  HorzScrollBar.Page = 512
+  VertScrollBar.Page = 331
+  BorderStyle = bsSizeToolWin
+  Caption = 'Param.Value Editor'
+  ClientHeight = 332
+  ClientWidth = 513
+  Constraints.MinHeight = 332
+  Constraints.MinWidth = 513
+  inherited BtnPanel: TPanel
+    Top = 291
+    Width = 513
+    ClientWidth = 513
+    TabOrder = 1
+    inherited imCorner: TImage
+      Left = 501
+    end
+    inherited btOk: TBitBtn
+      Left = 349
+    end
+    inherited btCancel: TBitBtn
+      Left = 430
+    end
+  end
+  object Memo: TMemo
+    Height = 291
+    Width = 513
+    Align = alClient
+    OnChange = MemoChange
+    TabOrder = 0
+  end
+end

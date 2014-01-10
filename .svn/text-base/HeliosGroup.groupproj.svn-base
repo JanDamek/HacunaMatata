@@ -1,0 +1,228 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{12C3ACCF-D650-4A51-AE90-9A8CCBD7FB08}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="SDAC\Source\Delphi16\sdac160.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SDAC\Source\Delphi16\crcontrols160.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SDAC\Source\Delphi16\dac160.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SDAC\Source\Delphi16\sdacfmx160.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SDAC\Source\Delphi16\dacfmx160.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SDAC\Source\Delphi16\dacvcl160.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SDAC\Source\Delphi16\dclcrcontrols160.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SDAC\Source\Delphi16\dcldac160.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SDAC\Source\Delphi16\dclsdac160.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SDAC\Source\Delphi16\sdacvcl160.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="synedit\syneditHD.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="HeliosHD.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="FMDefEdit.dproj">
+				<Dependencies>HeliosHD.dproj</Dependencies>
+			</Projects>
+			<Projects Include="HacunaMatata.dproj">
+				<Dependencies>HeliosHD.dproj</Dependencies>
+			</Projects>
+			<Projects Include="iOSGame15\iOSComps\iOSComps.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="iOSGame15\iOSGame.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="iOSGame15\BouncingBalls\BouncingBalls.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="sdac160">
+			<MSBuild Projects="SDAC\Source\Delphi16\sdac160.dproj"/>
+		</Target>
+		<Target Name="sdac160:Clean">
+			<MSBuild Projects="SDAC\Source\Delphi16\sdac160.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="sdac160:Make">
+			<MSBuild Projects="SDAC\Source\Delphi16\sdac160.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="crcontrols160">
+			<MSBuild Projects="SDAC\Source\Delphi16\crcontrols160.dproj"/>
+		</Target>
+		<Target Name="crcontrols160:Clean">
+			<MSBuild Projects="SDAC\Source\Delphi16\crcontrols160.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="crcontrols160:Make">
+			<MSBuild Projects="SDAC\Source\Delphi16\crcontrols160.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dac160">
+			<MSBuild Projects="SDAC\Source\Delphi16\dac160.dproj"/>
+		</Target>
+		<Target Name="dac160:Clean">
+			<MSBuild Projects="SDAC\Source\Delphi16\dac160.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dac160:Make">
+			<MSBuild Projects="SDAC\Source\Delphi16\dac160.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="sdacfmx160">
+			<MSBuild Projects="SDAC\Source\Delphi16\sdacfmx160.dproj"/>
+		</Target>
+		<Target Name="sdacfmx160:Clean">
+			<MSBuild Projects="SDAC\Source\Delphi16\sdacfmx160.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="sdacfmx160:Make">
+			<MSBuild Projects="SDAC\Source\Delphi16\sdacfmx160.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dacfmx160">
+			<MSBuild Projects="SDAC\Source\Delphi16\dacfmx160.dproj"/>
+		</Target>
+		<Target Name="dacfmx160:Clean">
+			<MSBuild Projects="SDAC\Source\Delphi16\dacfmx160.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dacfmx160:Make">
+			<MSBuild Projects="SDAC\Source\Delphi16\dacfmx160.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dacvcl160">
+			<MSBuild Projects="SDAC\Source\Delphi16\dacvcl160.dproj"/>
+		</Target>
+		<Target Name="dacvcl160:Clean">
+			<MSBuild Projects="SDAC\Source\Delphi16\dacvcl160.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dacvcl160:Make">
+			<MSBuild Projects="SDAC\Source\Delphi16\dacvcl160.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclcrcontrols160">
+			<MSBuild Projects="SDAC\Source\Delphi16\dclcrcontrols160.dproj"/>
+		</Target>
+		<Target Name="dclcrcontrols160:Clean">
+			<MSBuild Projects="SDAC\Source\Delphi16\dclcrcontrols160.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclcrcontrols160:Make">
+			<MSBuild Projects="SDAC\Source\Delphi16\dclcrcontrols160.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dcldac160">
+			<MSBuild Projects="SDAC\Source\Delphi16\dcldac160.dproj"/>
+		</Target>
+		<Target Name="dcldac160:Clean">
+			<MSBuild Projects="SDAC\Source\Delphi16\dcldac160.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dcldac160:Make">
+			<MSBuild Projects="SDAC\Source\Delphi16\dcldac160.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclsdac160">
+			<MSBuild Projects="SDAC\Source\Delphi16\dclsdac160.dproj"/>
+		</Target>
+		<Target Name="dclsdac160:Clean">
+			<MSBuild Projects="SDAC\Source\Delphi16\dclsdac160.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclsdac160:Make">
+			<MSBuild Projects="SDAC\Source\Delphi16\dclsdac160.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="sdacvcl160">
+			<MSBuild Projects="SDAC\Source\Delphi16\sdacvcl160.dproj"/>
+		</Target>
+		<Target Name="sdacvcl160:Clean">
+			<MSBuild Projects="SDAC\Source\Delphi16\sdacvcl160.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="sdacvcl160:Make">
+			<MSBuild Projects="SDAC\Source\Delphi16\sdacvcl160.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="syneditHD">
+			<MSBuild Projects="synedit\syneditHD.dproj"/>
+		</Target>
+		<Target Name="syneditHD:Clean">
+			<MSBuild Projects="synedit\syneditHD.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="syneditHD:Make">
+			<MSBuild Projects="synedit\syneditHD.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="HeliosHD">
+			<MSBuild Projects="HeliosHD.dproj"/>
+		</Target>
+		<Target Name="HeliosHD:Clean">
+			<MSBuild Projects="HeliosHD.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="HeliosHD:Make">
+			<MSBuild Projects="HeliosHD.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="FMDefEdit" DependsOnTargets="HeliosHD">
+			<MSBuild Projects="FMDefEdit.dproj"/>
+		</Target>
+		<Target Name="FMDefEdit:Clean" DependsOnTargets="HeliosHD:Clean">
+			<MSBuild Projects="FMDefEdit.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="FMDefEdit:Make" DependsOnTargets="HeliosHD:Make">
+			<MSBuild Projects="FMDefEdit.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="HacunaMatata" DependsOnTargets="HeliosHD">
+			<MSBuild Projects="HacunaMatata.dproj"/>
+		</Target>
+		<Target Name="HacunaMatata:Clean" DependsOnTargets="HeliosHD:Clean">
+			<MSBuild Projects="HacunaMatata.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="HacunaMatata:Make" DependsOnTargets="HeliosHD:Make">
+			<MSBuild Projects="HacunaMatata.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="iOSComps">
+			<MSBuild Projects="iOSGame15\iOSComps\iOSComps.dproj"/>
+		</Target>
+		<Target Name="iOSComps:Clean">
+			<MSBuild Projects="iOSGame15\iOSComps\iOSComps.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="iOSComps:Make">
+			<MSBuild Projects="iOSGame15\iOSComps\iOSComps.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="iOSGame">
+			<MSBuild Projects="iOSGame15\iOSGame.dproj"/>
+		</Target>
+		<Target Name="iOSGame:Clean">
+			<MSBuild Projects="iOSGame15\iOSGame.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="iOSGame:Make">
+			<MSBuild Projects="iOSGame15\iOSGame.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="BouncingBalls">
+			<MSBuild Projects="iOSGame15\BouncingBalls\BouncingBalls.dproj"/>
+		</Target>
+		<Target Name="BouncingBalls:Clean">
+			<MSBuild Projects="iOSGame15\BouncingBalls\BouncingBalls.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="BouncingBalls:Make">
+			<MSBuild Projects="iOSGame15\BouncingBalls\BouncingBalls.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="sdac160;crcontrols160;dac160;sdacfmx160;dacfmx160;dacvcl160;dclcrcontrols160;dcldac160;dclsdac160;sdacvcl160;syneditHD;HeliosHD;FMDefEdit;HacunaMatata;iOSComps;iOSGame;BouncingBalls"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="sdac160:Clean;crcontrols160:Clean;dac160:Clean;sdacfmx160:Clean;dacfmx160:Clean;dacvcl160:Clean;dclcrcontrols160:Clean;dcldac160:Clean;dclsdac160:Clean;sdacvcl160:Clean;syneditHD:Clean;HeliosHD:Clean;FMDefEdit:Clean;HacunaMatata:Clean;iOSComps:Clean;iOSGame:Clean;BouncingBalls:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="sdac160:Make;crcontrols160:Make;dac160:Make;sdacfmx160:Make;dacfmx160:Make;dacvcl160:Make;dclcrcontrols160:Make;dcldac160:Make;dclsdac160:Make;sdacvcl160:Make;syneditHD:Make;HeliosHD:Make;FMDefEdit:Make;HacunaMatata:Make;iOSComps:Make;iOSGame:Make;BouncingBalls:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>
